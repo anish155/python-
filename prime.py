@@ -18,8 +18,10 @@ def Check(num):
     for i in range(2,int(num**0.5)+1):
         if(num%i==0):
             print(num,"the number is not a prime.")
+            return False
         else:
             print(num,"this number is a prime number.")
+            return True
     return num
 num=Input()
 Check(num)
