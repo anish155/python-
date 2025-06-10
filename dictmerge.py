@@ -1,0 +1,10 @@
+person={"name":"anish",
+        "age":20
+}
+skills={"work":"code",
+        "status":"unemployed"
+}
+individual={}
+individual.update(person)
+individual.update(skills)
+print(individual)
