@@ -8,4 +8,5 @@ df=pd.DataFrame(person)
 name=["anish","rahul","dinesh","pujan","hari","kamal"]
 plt.title("salary")
 plt.pie(person["Salary"],labels=name)
+plt.legend()
 plt.show()
