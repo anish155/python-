@@ -1,0 +1,8 @@
+{
+  "greetings": ["Hi Traveller", "Hello Pal", "Namaste Babu"],
+  "time_greet": ["Good morning", "Good afternoon", "Good evening", "Good night"],
+  "talks": ["How may I help you?", "What is the topic to talk about?", "Why is the urgency here?"],
+  "Info": [
+    {"work time": "9AM to 6PM"}
+  ]
+}
