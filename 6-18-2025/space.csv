@@ -1,0 +1,11 @@
+Mission_Name,Agency,Country,Launch_Year,Launch_Site,Payload,Outcome
+Apollo 11,NASA,USA,1969,Kennedy Space Center,Lunar Module,Success
+Vostok 1,Roscosmos,Russia,1961,Baikonur Cosmodrome,Human Capsule,Success
+Chandrayaan-2,ISRO,India,2019,SDSC SHAR,Moon Orbiter,Partial Failure
+Tianwen-1,CNSA,China,2020,Wenchang Spacecraft Launch Site,Mars Rover,Success
+James Webb Launch,NASA,USA,2021,Guiana Space Centre,Infrared Telescope,Success
+Artemis I,NASA,USA,2022,Kennedy Space Center,Orion Spacecraft,Success
+ExoMars 2016,ESA,Europe,2016,Baikonur Cosmodrome,Mars Orbiter & Lander,Partial Failure
+BepiColombo,ESA-JAXA,Europe-Japan,2018,Guiana Space Centre,Mercury Orbiter,Ongoing
+Hayabusa2,JAXA,Japan,2014,Japan Aerospace Center,Asteroid Sample Return,Success
+Starlink Group 6-10,SpaceX,USA,2023,Cape Canaveral,60 Satellites,Ongoing
