@@ -1,0 +1,15 @@
+{"pens":{"ball pen":50,
+"gel pen":25,
+"dot pen":10,
+"astronaut pen":500
+},
+"pencil":{
+    "graphite pencil":20,
+    "charcoal pencil":80,
+    "lithium pencil":100
+},
+"eraser":{
+    "palm rubber":30,
+    "vinyl eraser": 40
+}
+}
