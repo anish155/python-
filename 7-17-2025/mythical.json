@@ -1,0 +1,50 @@
+{
+    "mythicals":
+    [
+    {
+        "id": 1,
+        "creature": "Dragon",
+        "location": "Bhutan",
+        "year": 2017,
+        "credibility": 8.7,
+        "witnesses": 3,
+        "description": "Glowing wings, seen flying near mountaintops at dusk."
+    },
+    {
+        "id": 2,
+        "creature": "Bigfoot",
+        "location": "Oregon, USA",
+        "year": 2021,
+        "credibility": 6.4,
+        "witnesses": 2,
+        "description": "Large hairy creature crossing a logging road."
+    },
+    {
+        "id": 3,
+        "creature": "Chupacabra",
+        "location": "Puerto Rico",
+        "year": 2015,
+        "credibility": 5.2,
+        "witnesses": 1,
+        "description": "Dog-sized creature with glowing eyes found near farm."
+    },
+    {
+        "id": 4,
+        "creature": "Loch Ness Monster",
+        "location": "Scotland",
+        "year": 2019,
+        "credibility": 7.9,
+        "witnesses": 5,
+        "description": "Large figure in water spotted from shore during fog."
+    },
+    {
+        "id": 5,
+        "creature": "Yeti",
+        "location": "Nepal",
+        "year": 2020,
+        "credibility": 9.1,
+        "witnesses": 2,
+        "description": "White-furred creature walking upright in snow trail."
+    }
+]
+}
