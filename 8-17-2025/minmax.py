@@ -3,9 +3,9 @@ min=lst[0]
 max=lst[0]
 
 for num in lst:
-    if max>num:
+    if num>max:
         max=num
     
-    if min<num:
+    if num<min:
         min=num
 print (min,max)
