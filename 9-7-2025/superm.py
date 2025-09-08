@@ -1,6 +1,13 @@
 class SuperMarket:
     Vat_rate=0.13
 
+    discount = {
+        "milk": {"discount": 25, "start": "2025-09-05", "end": "2025-09-10"},
+        "bread": {"discount": 20, "start": "2025-09-07", "end": "2025-09-09"},
+        "chocolate":{"discount": 50, "start": "2025-09-10", "end": "2025-09-20"}
+        }
+
+
     def __init__(self):
         self.customer=""
         self.item_name=[]
@@ -13,7 +20,7 @@ class SuperMarket:
         items=int(input("How many items do you want to buy?"))
 
         for i in range(items):
-            name = input(f"Enter name of item {i+1}: ")
+            name = input(f"Enter name of item {i+1}: ").lower()
             qty = int(input(f"Enter quantity of {name}: "))
             price = float(input(f"Enter price of {name}: "))
 
@@ -28,9 +35,24 @@ class SuperMarket:
         
         subtotal = 0
         for i in range(len(self.item_name)):
-            amount = self.item_qty[i] * self.item_price[i]
+            name=self.item_name[i]
+            qty=self.item_qty[i]
+            price=self.item_price[i]
+
+            amount=qty*price
+
+            if name in SuperMarket.discount:
+                discount_info=SuperMarket.discount[name]
+                discount_percent=discount_info["discount"]
+                discount_amount=(amount*discount_percent)/100
+                amount -= discount_amount
+                print(f"{name} (x{qty}) = Rs.{amount:.2f} (Discount {discount_percent}% applied)")
+            else:
+                print(f"{name} (x{qty}) = Rs.{amount:.2f}")
+
+            
             subtotal += amount
-            print(f"{self.item_name[i]} (x{self.item_qty[i]}) = Rs.{amount:.2f}")
+            
 
         vat_amount = subtotal * SuperMarket.Vat_rate
         total = subtotal + vat_amount
