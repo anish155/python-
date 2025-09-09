@@ -1,3 +1,4 @@
+from datetime import datetime
 class SuperMarket:
     Vat_rate=0.13
 
@@ -13,6 +14,7 @@ class SuperMarket:
         self.item_name=[]
         self.item_qty=[]
         self.item_price=[]
+        self.membership_active=False
 
     def interface(self):
         print("Super System")
@@ -27,7 +29,27 @@ class SuperMarket:
             self.item_name.append(name)
             self.item_qty.append(qty)
             self.item_price.append(price)
+    
+        self.membership()
 
+    def membership(self):
+        ans= input("Do you have membership? (yes/no): ").lower()
+        if ans=="yes":
+            membership=int(input("Enter your phone number:"))
+            mem_price={"Rs:": 150, "start": "2025-09-09", "end": "2026-09-09"}
+            
+            today=datetime.today().date()
+            start_date = datetime.strptime(mem_price["start"], "%Y-%m-%d").date()
+            end_date = datetime.strptime(mem_price["end"], "%Y-%m-%d").date()
+
+            if start_date <= today <= end_date:
+                print("✅ Membership is active! You will get extra 10% discount on total bill.")
+                self.membership_active = True
+            else:
+                print("❌ Membership expired or not active.")
+                self.membership_active = False
+        else:
+            self.membership_active = False
 
     def bill_slip(self):
         print("\n===== BILL SLIP =====")
@@ -61,6 +83,13 @@ class SuperMarket:
         print(f"Subtotal: Rs.{subtotal:.2f}")
         print(f"VAT ({SuperMarket.Vat_rate*100:.0f}%): Rs.{vat_amount:.2f}")
         print(f"Total: Rs.{total:.2f}")
+
+        if self.membership_active:
+            discount = total * 0.10  
+            total -= discount
+            print(f"Membership Discount (10%): -Rs.{discount:.2f}")
+
+        print(f"Final Total: Rs.{total:.2f}")
 
 sm=SuperMarket()
 sm.interface()
