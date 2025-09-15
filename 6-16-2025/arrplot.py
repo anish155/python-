@@ -13,7 +13,7 @@ print(name)
 df=pd.DataFrame(name,columns=["Name", "Age", "Education", "Course", "Salary"])
 print(df)
 
-# Plotting salary by name
+
 plt.figure(figsize=(8,5))
 plt.bar(df["Name"], df["Salary"], color="skyblue")
 plt.title("Salary of Individuals")

@@ -8,6 +8,7 @@ def numbers():
 def lifo(num):
     while num:
         print(num.pop())
+    
 
 num=numbers()
 lifo(num)

@@ -1,21 +1,26 @@
 def take_num():
-    for _ in range (8):
-        number=int(input("Enter the numbers:"))
-    return number
-def nesting(nums):
-    main=[]
-    big=[]
-    mid=[]
-    smol=[]
-    if nums>=50:
-        big.extend(nums)
-    elif nums>=25 and nums<=35:
-        mid.extend(nums)
-    else:
-        smol.extend(nums)
-    structure=main.append(big.append(mid.append(smol)))
-    return structure
+    numbers = []
+    for _ in range(8):
+        number = int(input("Enter the number: "))
+        numbers.append(number)
+    return numbers
 
-nums=take_num()
-nest=nesting(nums)
-print(nest)
+def nesting(nums):
+    big = []
+    mid = []
+    smol = []
+
+    for num in nums:
+        if num >= 50:
+            big.append(num)
+        elif 25 <= num <= 35:
+            mid.append(num)
+        else:
+            smol.append(num)
+
+    nested = [big, [mid, [smol]]]
+    return nested
+
+nums = take_num()
+nest = nesting(nums)
+print("Nested List:", nest)

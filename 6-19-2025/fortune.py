@@ -31,10 +31,10 @@ elif mid_count == 2:
     fortune = "🌫️ Cloudy Vision. Things are unclear—take care."
 elif mid_count == 1:
     fortune = "⚠️ Shaky Grounds. Tread carefully today."
-else:  # low_count == 3
+else:  
     fortune = "☠️ Dire Omen. Be cautious in all that you do."
 
-# Show reading and fortune
+
 print("Your reading:")
 print(" - " + ", ".join(reading))
 print("Interpretation:")

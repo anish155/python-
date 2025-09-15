@@ -1,0 +1,15 @@
+.body{
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient("to bottom",,); */
+}
+.table{
+    justify-content: center;
+    align-items: center;
+    border: solid black 10px ;
+    border-radius: 10px;
+}
